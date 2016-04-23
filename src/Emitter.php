@@ -11,6 +11,9 @@ class Emitter {
         if ($input % 5 == 0)
             $stringOutput .= "Buzz";
 
+        if ($input % 7 == 0)
+            $stringOutput .= "Woof";
+
         if ($stringOutput == "")
             $stringOutput .= $input;
 

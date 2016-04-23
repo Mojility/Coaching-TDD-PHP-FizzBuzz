@@ -1,11 +1,14 @@
-- Count from 1 to 50
+- Count from 75 to 125
 - Output it to the screen
 - If a number is evenly divisible by 3,
   output "Fizz" instead of the number
 - If a number is evenly divisible by 5,
   output "Buzz" instead of the number.
+- If a number is evenly divisible by both 3 and 5
+  output "FizzBuzz"
 
-BUT if a number is evenly divisible by both 3 and 5
-output "FizzBuzz"
-
-AND I need you to count between 75 and 125
+BUT if a number is evenly divisible by 7,
+output "Woof", and if it's evenly divisible
+by 3, 5 and 7, output FizzBuzzWoof, 3 and 7
+should be "FizzWoof", 5 and 7 should be
+"BuzzWoof".

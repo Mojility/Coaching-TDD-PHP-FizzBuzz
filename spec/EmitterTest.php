@@ -25,4 +25,20 @@ class EmitterTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals("FizzBuzz", $this->emitter->output(15));
     }
 
+    function testShouldEmitWoofFor7() {
+        $this->assertEquals("Woof", $this->emitter->output(7));
+    }
+
+    function testShouldEmitFizzWoofFor21() {
+        $this->assertEquals("FizzWoof", $this->emitter->output(21));
+    }
+
+    function testShouldEmitBuzzWoofFor35() {
+        $this->assertEquals("BuzzWoof", $this->emitter->output(35));
+    }
+
+    function testShouldEmitFizzBuzzWoofFor105() {
+        $this->assertEquals("FizzBuzzWoof", $this->emitter->output(105));
+    }
+
 }
