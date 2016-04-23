@@ -1,3 +1,5 @@
 - Count from 1 to 25
+- Output it to the screen
 
-BUT output it to the screen! 
+BUT if a number is evenly divisible by 3,
+output "Fizz" instead of the number
