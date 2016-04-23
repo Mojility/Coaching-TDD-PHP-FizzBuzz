@@ -1,5 +1,9 @@
 <?php
 
+require_once('src/Emitter.php');
+
+$e = new Emitter();
+
 for ($i = 1; $i <= 25; $i++) {
-    echo "$i\n";
+    echo $e->output($i) . "\n";
 }
