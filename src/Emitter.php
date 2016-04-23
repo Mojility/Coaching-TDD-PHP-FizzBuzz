@@ -1,20 +1,26 @@
 <?php
 
+require_once('src/Logic.php');
+
 class Emitter {
+
+    private $divisorLogic;
+
+    public function __construct() {
+        $this->divisorLogic = [
+            new Logic(3, "Fizz"),
+            new Logic(5, "Buzz"),
+            new Logic(7, "Woof")
+        ];
+    }
 
     public function output($input) {
         $stringOutput = "";
 
-        if ($input % 3 == 0)
-            $stringOutput .= "Fizz";
+        foreach($this->divisorLogic as $logic)
+            $stringOutput .= $logic->output($input);
 
-        if ($input % 5 == 0)
-            $stringOutput .= "Buzz";
-
-        if ($input % 7 == 0)
-            $stringOutput .= "Woof";
-
-        if ($stringOutput == "")
+        if ($stringOutput === "")
             $stringOutput .= $input;
 
         return $stringOutput;
