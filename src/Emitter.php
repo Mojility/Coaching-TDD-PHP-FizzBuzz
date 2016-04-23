@@ -3,12 +3,15 @@
 class Emitter {
 
     public function output($input) {
-        $out = "" + $input;
+        $stringOutput = "" + $input;
 
-        if ($input == 3)
-            $out = "Fizz";
+        if ($input % 3 == 0)
+            $stringOutput = "Fizz";
 
-        return $out;
+        if ($input % 5 == 0)
+            $stringOutput = "Buzz";
+
+        return $stringOutput;
     }
 
 }

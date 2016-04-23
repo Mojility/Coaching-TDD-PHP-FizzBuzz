@@ -10,9 +10,14 @@ class EmitterTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(2, $emitter->output(2));
     }
 
-    function testShouldEmitFizz() {
+    function testShouldEmitFizzFor3() {
         $emitter = new Emitter();
         $this->assertEquals("Fizz", $emitter->output(3));
+    }
+
+    function testShouldEmitBuzzFor5() {
+        $emitter = new Emitter();
+        $this->assertEquals("Buzz", $emitter->output(5));
     }
 
 }
